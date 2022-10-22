@@ -15,7 +15,6 @@ Step-1:  Install microK8s in MasterNode.​ (Fire these commands in MasterNode)
     sudo snap alias microk8s.kubectl kubectl    # make alias of microk8s.kubectl to kubectl
 
     microk8s add-node                           # fire the comman to get the join command for worker node 
-    
     ​                                                              
 
 
@@ -30,9 +29,8 @@ Step-2:  Join worker-node-1 to MasterNode.​ (Fire these commands in worker-nod
 
     sudo microk8s.status                        # check the running status of microK8s
 
-    microk8s join  <TOKEN_SHOWN_IN_ADD-NODE_COMMAND_IN_MASTER_NODE>    # run "microk8s add-node" inside master node to get this command 
-     
-     ​                                                              
+    microk8s join  <TOKEN_SHOWN_IN_ADD-NODE_COMMAND>    # run "microk8s add-node" inside master node to get this command 
+    ​                                                              
 
 
 
@@ -46,6 +44,5 @@ Step-3: Join worker-node-2 to MasterNode.​ (Fire these commands in worker-node
 
     sudo microk8s.status                        # check the running status of microK8s
 
-    microk8s join  <TOKEN_SHOWN_IN_ADD-NODE_COMMAND_IN_MASTER_NODE>    # run "microk8s add-node" inside master node to get this command  
-     
+    microk8s join  <TOKEN_SHOWN_IN_ADD-NODE_COMMAND>    # run "microk8s add-node" inside master node to get this command  
     ​                                                              
