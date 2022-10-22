@@ -1,6 +1,6 @@
 
 
-#(Execute in worker-node-2)
+#(Execute in worker-node-1)
 
 sudo apt update                              # Update the apt package            
 sudo snap install microk8s --classic         # install microK8s through snap
