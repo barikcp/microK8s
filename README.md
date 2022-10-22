@@ -3,11 +3,21 @@
 
 Step-1:  Install Docker.​ (Fire these commands in MasterNode and WorkerNodes)
 
-
- sudo apt-get update   # Update the apt package index
-      
+     
     # install packages to allow apt to use a repository over HTTPS
-    sudo apt-get install \              
+    
+    sudo apt update  
+
+    sudo snap install microk8s --classic
+
+    sudo microk8s.status
+
+    microk8s.kubectl get nodes
+
+    sudo snap alias microk8s.kubectl kubectl
+
+    microk8s add-node
+    
     ca-certificates \
     curl \
     gnupg \
