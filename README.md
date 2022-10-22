@@ -1,4 +1,23 @@
-# microK8s
+#Install microK8s
+
+
+Step-1:  Install Docker.​ (Fire these commands in MasterNode and WorkerNodes)
+
+
+ sudo apt-get update   # Update the apt package index
+      
+    # install packages to allow apt to use a repository over HTTPS
+    sudo apt-get install \              
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release ​                                                              
+
+
+
+
+
+
 
 
 
