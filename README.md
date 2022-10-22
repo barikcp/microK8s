@@ -4,19 +4,45 @@
 Step-1:  Install microK8s in MasterNode.​ (Fire these commands in MasterNode)
 
      
-    sudo apt update                        # Update the apt package 
+    sudo apt update                             # Update the apt package 
 
-    sudo snap install microk8s --classic   # install microK8s through snap
+    sudo snap install microk8s --classic        # install microK8s through snap
 
-    sudo microk8s.status                   # check the running status of microK8s
+    sudo microk8s.status                        # check the running status of microK8s
 
-    microk8s.kubectl get nodes             # Check the node status
+    microk8s.kubectl get nodes                  # Check the node status
 
     sudo snap alias microk8s.kubectl kubectl    # make alias of microk8s.kubectl to kubectl
 
-    microk8s add-node                      # fire the comman to get the join command for worker node 
-    
+    microk8s add-node                           # fire the comman to get the join command for worker node 
     ​                                                              
+
+
+
+Step-1:  Install microK8s in MasterNode.​ (Fire these commands in MasterNode)
+
+     
+    sudo apt update                             # Update the apt package 
+
+    sudo snap install microk8s --classic        # install microK8s through snap
+
+    sudo microk8s.status                        # check the running status of microK8s
+
+    microk8s.kubectl get nodes                  # Check the node status
+
+    sudo snap alias microk8s.kubectl kubectl    # make alias of microk8s.kubectl to kubectl
+
+    microk8s add-node                           # fire the comman to get the join command for worker node 
+    ​                                                              
+
+
+
+
+
+
+
+
+
 
 
 #(Execute in worker-node-1)
