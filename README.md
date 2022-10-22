@@ -1,16 +1,14 @@
 #Install microK8s
 
 
-Step-1:  Install Docker.​ (Fire these commands in MasterNode and WorkerNodes)
+Step-1:  Install microK8s in MasterNode.​ (Fire these commands in MasterNode)
 
      
-    # install packages to allow apt to use a repository over HTTPS
-    
-    sudo apt update  
+    sudo apt update                        # Update the apt package 
 
-    sudo snap install microk8s --classic
+    sudo snap install microk8s --classic   # install microK8s through snap
 
-    sudo microk8s.status
+    sudo microk8s.status                   # check the running status of microK8s
 
     microk8s.kubectl get nodes
 
